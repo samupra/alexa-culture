@@ -1,6 +1,7 @@
 package com.samupra.alexaculturehistoryapp;
 
-import java.util.Optional;import com.amazon.ask.dispatcher.request.handler.HandlerInput;
+import java.util.Optional;
+import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 import com.amazon.ask.dispatcher.request.handler.RequestHandler;
 import static com.amazon.ask.request.Predicates.intentName;
 import com.amazon.ask.model.Response;
