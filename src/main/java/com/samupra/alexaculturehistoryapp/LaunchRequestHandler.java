@@ -17,7 +17,9 @@ public class LaunchRequestHandler implements RequestHandler {
 
     @Override
     public Optional<Response> handle(HandlerInput input) {
-        String speechText = "Welcome to the Alexa Skills Kit, you can say Learn History";
+        String speechText = "Welcome to the Alexa Learning History Application. " +
+                "Please specify which culture you would like to learn?" +
+                "Currently, I support only" + SupportedModules.ANCIENT_GREECE.toString().replace("_", "") + " History";
         return input.getResponseBuilder()
                 .withSpeech(speechText)
                 .withSimpleCard("HelloToApp", speechText)
