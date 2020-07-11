@@ -4,6 +4,7 @@ import com.amazon.ask.Skill;
 import com.amazon.ask.SkillStreamHandler;
 import com.amazon.ask.Skills;
 import com.samupra.alexaculturehistoryapp.greece.*;
+import com.samupra.alexaculturehistoryapp.learning.ProgressTrackingIntent;
 
 public class HistoryStreamHandler extends SkillStreamHandler {
 
@@ -19,7 +20,8 @@ public class HistoryStreamHandler extends SkillStreamHandler {
                         new AncientGreeceCultureRequestHandler(),
                         new AncientGreecePhilosophyRequestHandler(),
                         new AncientGreecePoliticsRequestHandler(),
-                        new AncientGreeceScienceRequestHandler())
+                        new AncientGreeceScienceRequestHandler(),
+                        new ProgressTrackingIntent())
                 .withSkillId("amzn1.ask.skill.9e14da97-88d4-48de-a7c3-46236a294a11")
                 .build();
     }
