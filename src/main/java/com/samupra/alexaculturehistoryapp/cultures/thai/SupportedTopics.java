@@ -1,8 +1,7 @@
-package com.samupra.alexaculturehistoryapp.greece;
+package com.samupra.alexaculturehistoryapp.cultures.thai;
 
 enum SupportedTopics {
     CULTURE,
     PHILOSOPHY,
-    SCIENCE,
     POLITICS
 }

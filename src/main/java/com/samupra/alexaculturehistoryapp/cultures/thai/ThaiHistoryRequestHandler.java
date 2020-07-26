@@ -1,16 +1,17 @@
-package com.samupra.alexaculturehistoryapp.greece;
+package com.samupra.alexaculturehistoryapp.cultures.thai;
 
-import java.util.Optional;
 import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 import com.amazon.ask.dispatcher.request.handler.RequestHandler;
 import com.amazon.ask.model.Response;
 
+import java.util.Optional;
+
 import static com.amazon.ask.request.Predicates.intentName;
 
-public class AncientGreeceHistoryRequestHandler implements RequestHandler {
+public class ThaiHistoryRequestHandler implements RequestHandler {
 
     public boolean canHandle(HandlerInput input) {
-        return input.matches(intentName("AncientGreeceHistoryIntent"));
+        return input.matches(intentName("ThaiHistoryIntent"));
     }
 
     private String topicsSupported () {
@@ -23,11 +24,11 @@ public class AncientGreeceHistoryRequestHandler implements RequestHandler {
     }
 
     public Optional<Response> handle(HandlerInput input) {
-        String speechText = "Which topic of Ancient Greece Culture and History would you like to learn about?" +
+        String speechText = "Which topic of Thai would you like to learn about?" +
                 "Currently I support the following topics: " + this.topicsSupported();
         return input.getResponseBuilder()
                 .withSpeech(speechText)
-                .withSimpleCard("WelcomeToAncientGreece", speechText)
+                .withSimpleCard("WelcomeToThaiHistory", speechText)
                 .build();
     }
 

@@ -1,4 +1,4 @@
-package com.samupra.alexaculturehistoryapp.greece;
+package com.samupra.alexaculturehistoryapp.cultures.greece;
 
 import java.util.Optional;
 import com.amazon.ask.dispatcher.request.handler.HandlerInput;
